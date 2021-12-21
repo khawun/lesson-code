@@ -1,0 +1,256 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.stdio{
+    width: 100%;
+    height: 100vh;
+    background-image:url(photo/image.jpg);
+    object-fit: cover;
+    background-position: center;
+}
+.stdio> .conio{
+    position: absolute;
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+    background:rgba(0,0,0,0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+}
+.stdio> .conio> .form_{
+    width: 100%;
+}
+.stdio> .conio> .form_> .form_login{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top:10px;
+}
+.stdio> .conio> .form_> .form_login> h2{
+    padding: 10px 0px;
+    margin-top: -20px;
+    border-bottom: 2px solid greenyellow;
+    margin-bottom: 5px;
+    letter-spacing: 1.5px;
+}
+.stdio> .conio> .form_> .form_login> input{
+    background: rgba(0,0,0,0.5);
+    border-bottom:2px solid rgb(236, 219, 219);
+    padding: 2px;
+    color: white;
+    border-left: 2px solid white;
+}
+.stdio> .conio> .form_> .form_login> input:focus{
+    color: white;
+    border-bottom: none;
+    border-left: none;
+
+}
+.stdio> .conio> .form_> .form_login> input::placeholder{
+    padding: 0px 30px;
+    color: darkcyan;
+}
+.stdio> .conio> .form_> .form_login> .show_check{
+    margin-top: -15px;
+    margin-left: 108px;
+}
+.stdio> .conio> .form_> .form_login> label{
+    margin-top: 3px;
+}
+.stdio> .conio> .form_> .form_login> i.fa-check{
+    color: greenyellow;
+    margin-top: -20px;
+    margin-left: 250px;
+    visibility: hidden;
+}
+.stdio> .conio> .form_> .form_login> i.fa-exclamation{
+    color: red;
+    margin-top: -16px;
+    margin-left: 254px;
+    visibility: hidden;
+}
+.stdio> .conio> .form_> .form_login.success> i.fa-check{
+    visibility:visible;
+}
+.stdio> .conio> .form_> .form_login.error> i.fa-exclamation{
+    visibility: visible;
+}
+
+.stdio> .conio> .form_> button{
+    background: rgba(0,0,0,0.5);
+    color: white;
+    margin-left: 85px;
+    border: 2px solid greenyellow;
+    padding: 4.2px;
+    border-radius:5px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.stdio> .conio> .form_> button:active{
+    transform: scale(1.2);
+}
+.stdio> .conio> .form_> a{
+    text-decoration: none;
+    border:2px solid greenyellow;
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+    display: flex;
+    width: 13%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -28.2px;
+    margin-left: 140px;
+    transition: 1s;
+}
+.stdio> .conio> .form_> a:active{
+    transform: scale(0.9);
+}
+.stdio> .conio> .click_{
+    margin-top: 10px;
+}
+.stdio> .conio> .click_> button{
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    padding: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+.stdio> .conio> .click_> button:active{
+    transform: scale(0.9);
+}
+.stdio> .conio> .click_> button:focus{
+    border-bottom: none;
+    border-right: none;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+}
+.stdio> .conio> .form_> .form_login> small{
+    margin-top: 5px;
+    visibility: hidden;
+}
+.stdio> .conio> .form_> .form_login.error> small{
+    color: red;
+    visibility: visible;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------------*/
+.stdio> .Account{
+    position: absolute;
+    left:41.1%;
+    top:13%;
+    transform: translate(-50px,-50px);
+    background: rgba(0,0,0,0.5);
+    width:330px;
+    height: 95vh;
+    display: none;
+}
+.stdio> .Account.form2{
+    display: block;
+}
+.stdio> .Account> .Geate_{
+    padding: 30px;
+    margin-top: -20px;
+}
+.stdio> .Account> .Geate_> .Geate_form{
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+.stdio> .Account> .Geate_> .Geate_form> i.fa-check{
+    margin-top: -20px;
+    margin-left: 250px;
+    color: greenyellow;
+    visibility: hidden;
+}
+.stdio> .Account> .Geate_> .Geate_form> i.fa-exclamation{
+    margin-top: -17px;
+    margin-left:253px;
+    color: red;
+    visibility: hidden;
+}
+.stdio> .Account> .Geate_> .Geate_form.success> i.fa-check{
+    visibility: visible;
+}
+.stdio> .Account> .Geate_> .Geate_form.error> i.fa-exclamation{
+    visibility: visible;
+}
+.stdio> .Account> .Geate_> .Geate_form> input{
+    padding: 3px;
+    border-bottom: 2px solid white;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border-left: 2px solid white;
+}
+.stdio> .Account> .Geate_> .Geate_form> input:focus{
+    border-bottom: none;
+    color: white;
+    border-left: none;
+}
+.stdio> .Account> .Geate_> .Geate_form> input::placeholder{
+    padding:0px 30px;
+    color: darkcyan;
+}
+.stdio> .Account> .Geate_> .Geate_form> h2{
+    text-align: center;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid greenyellow;
+}
+.stdio> .Account> .Geate_> .Geate_form> input[type="checkbox"]{
+    margin-top: -15px;
+    margin-left: 105px;
+}
+.stdio> .Account> button:active{
+    transform: scale(0.9);
+}
+.stdio> .Account> button[type="button"]{
+    margin-top:-20px;
+    width:13%;
+    float: right;
+    margin-right: 30px;
+    border-color: white;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding:3px;
+    border:2px solid greenyellow;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.stdio> .Account> .Geate_> .Geate_form> small{
+    color: red;
+    visibility: hidden;
+    margin-top: 3px;
+}
+.stdio> .Account> .Geate_> .Geate_form.error> small{
+    visibility: visible;
+}
+.stdio> .Account> .Geate_> button{
+    width: 100%;
+    padding:3px;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    margin-top:8px;
+    box-shadow: 1px 1px 1px;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    transition: 0.7s;
+    cursor: pointer;
+}
+.stdio> .Account> .Geate_> button:active{
+    transform: scale(0.9);
+}
